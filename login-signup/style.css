@@ -1,0 +1,50 @@
+:root {
+  --color-text-default: #ffffff;
+  --color-secondary: #212549;
+  --color-purple-light: #c738a7;
+  --color-purple-dark: #a232bd;
+  --color-purple-darkest: #5d3fdf;
+}
+
+body {
+  background-image: linear-gradient(
+    45deg,
+    var(--color-purple-light),
+    var(--color-purple-dark)
+  );
+  height: 100vh;
+  width: 100vw;
+}
+
+.link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link .underline {
+  transition: 0.2s ease-in-out;
+}
+
+.link a:hover + .underline {
+  width: 100%;
+}
+
+.form .underline {
+  transition: 0.2s ease-in-out;
+}
+
+.form .input:focus + span .underline {
+  width: 100%;
+}
+
+.btn-gradient-purple {
+  background-image: linear-gradient(
+    45deg,
+    var(--color-purple-light),
+    var(--color-purple-darkest)
+  );
+}
+
+.card {
+  box-shadow: 1px 1px 20px -100px rgb(0 0 0), -1px -1px 20px 3px rgb(0 0 0);
+}

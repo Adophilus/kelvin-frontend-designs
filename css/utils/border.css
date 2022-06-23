@@ -42,6 +42,10 @@
   border-bottom-color: var(--color-dark-grey);
 }
 
+.rounded-1\/2 {
+  border-radius: 0.5em;
+}
+
 .rounded-1 {
   border-radius: 1em;
 }
