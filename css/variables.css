@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #7ebdf3;
+  --color-emphasis: #3fbdf7;
+  --color-secondary: #eff8ff;
+  --color-grey: #efefef;
+  --color-dark-grey: #b3b3b3;
+  --color-text-default: #727272;
+  --text-heading: 2.3rem;
+  --text-large: 1.8rem;
+  --text-big: 1.3rem;
+  --text-normal: 1rem;
+  --text-small: 0.3rem;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: inherit;
+  color: var(--color-text-default);
+}
+
+button {
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}

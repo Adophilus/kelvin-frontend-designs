@@ -1,0 +1,7 @@
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:border-b-black:focus {
+  border-bottom-color: #000000;
+}

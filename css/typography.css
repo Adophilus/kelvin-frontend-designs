@@ -1,0 +1,51 @@
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.text-heading {
+  font-size: var(--text-heading);
+}
+
+.text-large {
+  font-size: var(--text-large);
+}
+
+.text-big {
+  font-size: var(--text-big);
+}
+
+.text-normal {
+  font-size: var(--text-normal);
+}
+
+.text-default {
+  color: var(--color-text-default);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-emphasis {
+  color: var(--color-emphasis);
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-center {
+  text-align: center;
+}
