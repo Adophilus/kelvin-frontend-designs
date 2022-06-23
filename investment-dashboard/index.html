@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Investment Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="//unpkg.com/alpinejs" defer></script>
+  </head>
+  <body class="bg-secondary font-montserrat">
+    <div class="flex">
+      <sidebar
+        id="sidebar"
+        x-data="{ tabs: [['fa-solid fa-table-columns', 'Dashboard'], ['fa-solid fa-wallet', 'Fund Wallet'], ['fa-solid fa-money-bill-trend-up', 'Invest'], ['fa-solid fa-building-columns', 'Withdraw'], ['fa-solid fa-arrow-right-from-bracket', 'Logout']] }"
+        class="bg-white b-2 b-black"
+      >
+        <template x-for="tab in tabs">
+          <div class="tab flex gap-x-1 py-3/2 px-3">
+            <span class="icon text-large text-primary"
+              ><i x-bind:class="tab[0]"></i
+            ></span>
+            <span class="label text-big" x-text="tab[1]"></span>
+          </div>
+        </template>
+      </sidebar>
+      <main class="flex align-center mx-auto w-70 bg-white">
+        <div class="mx-auto overflow-hidden shadow w-45 rounded-1">
+          <header class="bg-secondary py-2 pb-1">
+            <h1 class="text-emphasis text-large text-center">Fund Your Wallet</h1>
+            <div class="h-3 w-1/3 mx-auto mt-1/2 bg-emphasis"></div>
+          </header>
+          <div class="w-85 mx-auto">
+            <div class="mt-2">
+              <input
+                type="text"
+                placeholder="Enter Amount To Fund"
+                class="w-full text-normal py-1/2 border-0 border-solid border-b-2 border-b-dark-grey focus:outline-none focus:border-b-black"
+              />
+            </div>
+            <div class="flex mt-2 gap-x-1">
+              <button class="w-1/2 border-2 border-solid border-grey rounded-1">
+                <img class="w-1/2 py-2" src="./imgs/paypal.jpg" />
+              </button>
+              <button class="w-1/2 border-2 border-solid border-grey rounded-1">
+                <img class="w-1/2 py-2" src="./imgs/stripe.png" />
+              </button>
+            </div>
+            <div class="mt-1">
+              <button
+                class="w-full border-2 border-solid border-grey rounded-1"
+              >
+                <img class="w-1/3 py-1" src="./imgs/bitcoin-accepted.png" />
+              </button>
+            </div>
+            <div class="flex justify-center mt-2 mb-3">
+              <button
+                class="py-1 w-full font-600 text-normal text-white rounded-2 btn-gradient-primary"
+              >
+                Choose A Payment Method
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
